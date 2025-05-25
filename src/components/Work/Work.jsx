@@ -5,13 +5,20 @@ import { FaGithub } from "react-icons/fa";
 const Work = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const modalRef = useRef(null);
+  const scrollPositionRef = useRef(0);
 
   const handleOpenModal = (project) => {
+    // Store current scroll position
+    scrollPositionRef.current = window.pageYOffset;
     setSelectedProject(project);
   };
 
   const handleCloseModal = () => {
     setSelectedProject(null);
+    // Restore scroll position after a small delay to ensure modal is closed
+    setTimeout(() => {
+      window.scrollTo(0, scrollPositionRef.current);
+    }, 0);
   };
 
   // Handle click outside
@@ -28,6 +35,21 @@ const Work = () => {
 
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [selectedProject]);
+
+  // Handle scroll locking
+  useEffect(() => {
+    if (selectedProject) {
+      // Add class to body to prevent scrolling
+      document.body.classList.add("modal-open");
+    } else {
+      // Remove class when modal is closed
+      document.body.classList.remove("modal-open");
+    }
+
+    return () => {
+      document.body.classList.remove("modal-open");
     };
   }, [selectedProject]);
 
@@ -104,12 +126,12 @@ const Work = () => {
 
       {/* Modal Container */}
       {selectedProject && (
-        <div className="fixed inset-0 z-50 flex items-start justify-center bg-black bg-opacity-90 p-4 overflow-y-auto">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4">
           <div
             ref={modalRef}
-            className="bg-white dark:bg-gray-900 rounded-xl shadow-2xl w-[90%] max-w-2xl overflow-hidden relative my-4"
+            className="bg-white dark:bg-gray-900 rounded-xl shadow-2xl w-[90%] max-w-2xl max-h-[90vh] flex flex-col"
           >
-            <div className="flex justify-end p-4 sticky top-0 bg-white dark:bg-gray-900 z-10">
+            <div className="flex justify-end p-4 bg-white dark:bg-gray-900 z-10">
               <button
                 onClick={handleCloseModal}
                 className="text-gray-900 dark:text-white text-3xl font-bold hover:text-purple-500 bg-white dark:bg-gray-800 rounded-full w-10 h-10 flex items-center justify-center shadow-lg hover:shadow-purple-500/50 transition-all duration-300"
@@ -118,7 +140,7 @@ const Work = () => {
               </button>
             </div>
 
-            <div className="flex flex-col max-h-[85vh] overflow-y-auto scrollbar-hide">
+            <div className="flex-1 overflow-y-auto">
               <div className="w-full flex justify-center bg-gray-50 dark:bg-gray-900 px-4">
                 <img
                   src={selectedProject.image}
@@ -143,7 +165,7 @@ const Work = () => {
                     </span>
                   ))}
                 </div>
-                <div className="flex gap-4 sticky bottom-0 bg-white dark:bg-gray-900 pt-4 pb-2">
+                <div className="flex gap-4 bg-white dark:bg-gray-900 pt-4 pb-2">
                   <a
                     href={selectedProject.github}
                     target="_blank"

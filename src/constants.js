@@ -151,7 +151,7 @@ export const education = [
     img: mit,
     school: "Manipal Institute of Technology, Manipal",
     date: "2024 - 2026",
-    grade: "8.47 GPA",
+    grade: "8.18 CGPA",
     desc: "I am currently pursuing my Master’s in Computer Applications (MCA) at MIT Manipal. During my time here, I've been sharpening my skills in full-stack development, diving deep into DSA, and exploring advanced technologies like TypeScript and Next.js. I've actively participated in workshops and hackathons, and collaborated on full-stack projects to enhance my practical development experience.",
     degree: "Master of Computer Applications - MCA",
   },

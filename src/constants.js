@@ -42,6 +42,25 @@ import githubLocator from "./assets/work_logo/githubLocator.png";
 import pokemon from "./assets/work_logo/pokemon.png";
 import newsMon from "./assets/work_logo/newsMon.png";
 
+// Certificate Secrion Logo's
+import img921275 from "./assets/certificates/921275.png";
+import imgC from "./assets/certificates/c.png";
+import imgCSS from "./assets/certificates/css.png";
+import imgExcel from "./assets/certificates/Excel.png";
+import imgFCCFrontEnd from "./assets/certificates/FreeCodeCamp_FrontEndLibraries.png";
+import imgFCCJS from "./assets/certificates/FreeCodeCamp_JavaScriptAlgorithms.png";
+import imgFCCResponsive from "./assets/certificates/FreeCodeCamp_ResponsiveWebDesign.png";
+import imgFullstack from "./assets/certificates/fullstackdevelopment.png";
+import imgHTML from "./assets/certificates/html.png";
+import imgInternship from "./assets/certificates/Internship Letter.jpg";
+import imgJava from "./assets/certificates/java.png";
+import imgMaths from "./assets/certificates/maths.png";
+import imgMSExcel from "./assets/certificates/MS-Excel_Certificate.png";
+import imgNodeExpress from "./assets/certificates/nodejs+expressjs.png";
+import imgReactRedux from "./assets/certificates/react+redux.png";
+import imgTypeScript from "./assets/certificates/typescript.png";
+import imgWT from "./assets/certificates/wt.png";
+
 export const SkillsInfo = [
   {
     title: "Frontend",
@@ -150,9 +169,9 @@ export const education = [
     id: 0,
     img: mit,
     school: "Manipal Institute of Technology, Manipal",
-    date: "2024 - 2026",
+    date: "2024 - Present",
     grade: "8.18 CGPA",
-    desc: "I am currently pursuing my Master’s in Computer Applications (MCA) at MIT Manipal. During my time here, I've been sharpening my skills in full-stack development, diving deep into DSA, and exploring advanced technologies like TypeScript and Next.js. I've actively participated in workshops and hackathons, and collaborated on full-stack projects to enhance my practical development experience.",
+    desc: "I am currently pursuing my Master's in Computer Applications (MCA) at MIT Manipal. During my time here, I've been sharpening my skills in full-stack development, diving deep into DSA, and exploring advanced technologies like TypeScript and Next.js. I've actively participated in workshops and hackathons, and collaborated on full-stack projects to enhance my practical development experience.",
     degree: "Master of Computer Applications - MCA",
   },
   {
@@ -351,4 +370,28 @@ export const projects = [
     github: "https://github.com/Saurabh-Shivam/NewsMonkey-React",
     webapp: "https://github.com/Saurabh-Shivam/NewsMonkey-React",
   },
+];
+
+export const certificates = [
+  { id: 0, name: "921275", image: img921275 },
+  { id: 1, name: "C Programming", image: imgC },
+  { id: 2, name: "CSS", image: imgCSS },
+  { id: 3, name: "Excel", image: imgExcel },
+  { id: 4, name: "FreeCodeCamp - Front End Libraries", image: imgFCCFrontEnd },
+  { id: 5, name: "FreeCodeCamp - JavaScript Algorithms", image: imgFCCJS },
+  {
+    id: 6,
+    name: "FreeCodeCamp - Responsive Web Design",
+    image: imgFCCResponsive,
+  },
+  { id: 7, name: "Full Stack Development", image: imgFullstack },
+  { id: 8, name: "HTML", image: imgHTML },
+  { id: 9, name: "Internship Letter", image: imgInternship },
+  { id: 10, name: "Java", image: imgJava },
+  { id: 11, name: "Maths", image: imgMaths },
+  { id: 12, name: "MS Excel Certificate", image: imgMSExcel },
+  { id: 13, name: "Node.js & Express.js", image: imgNodeExpress },
+  { id: 14, name: "React & Redux", image: imgReactRedux },
+  { id: 15, name: "TypeScript", image: imgTypeScript },
+  { id: 16, name: "Web Technology", image: imgWT },
 ];

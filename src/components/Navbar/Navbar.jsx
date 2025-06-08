@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaCode, FaGithub, FaLinkedin } from "react-icons/fa";
 import { useTheme } from "../../context/ThemeContext";
 import { FiSun, FiMoon } from "react-icons/fi";
 
@@ -16,7 +16,14 @@ const Navbar = () => {
     setIsScrolled(scrollPosition > 50);
 
     // Update active section based on scroll position
-    const sections = ["about", "skills", "experience", "work", "education"];
+    const sections = [
+      "about",
+      "skills",
+      "experience",
+      "work",
+      "education",
+      "certificates",
+    ];
     const currentSection = sections.find((section) => {
       const element = document.getElementById(section);
       if (element) {
@@ -61,6 +68,7 @@ const Navbar = () => {
     { id: "experience", label: "Experience" },
     { id: "work", label: "Projects" },
     { id: "education", label: "Education" },
+    { id: "certificates", label: "Certificates" },
   ];
 
   return (
@@ -129,6 +137,14 @@ const Navbar = () => {
           >
             <FaLinkedin size={24} />
           </a>
+          <a
+            href="https://leetcode.com/u/saurabh-shivam/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 dark:text-gray-300 hover:text-[#8245ec] transition-colors duration-200"
+          >
+            <FaCode size={24} />
+          </a>
         </div>
 
         {/* Mobile Menu Icon */}
@@ -192,6 +208,14 @@ const Navbar = () => {
                 className="text-gray-600 dark:text-gray-300 hover:text-[#8245ec] transition-colors duration-200"
               >
                 <FaLinkedin size={24} />
+              </a>
+              <a
+                href="https://leetcode.com/u/saurabh-shivam/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 dark:text-gray-300 hover:text-[#8245ec] transition-colors duration-200"
+              >
+                <FaCode size={24} />
               </a>
             </div>
           </ul>

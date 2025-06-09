@@ -195,7 +195,7 @@ export const education = [
   {
     id: 3,
     img: sis,
-    school: "Satyam International High School, Patna, Bihar",
+    school: "Satyam International School, Patna, Bihar",
     date: "",
     grade: "9.7 CGPA",
     desc: "I completed my Class 10 (CBSE) from Satyam International High School with a strong academic foundation, particularly in Science and Computer Applications.",

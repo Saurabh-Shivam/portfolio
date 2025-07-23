@@ -41,6 +41,8 @@ import coachingWeb from "./assets/work_logo/coachingWeb.png";
 import githubLocator from "./assets/work_logo/githubLocator.png";
 import pokemon from "./assets/work_logo/pokemon.png";
 import newsMon from "./assets/work_logo/newsMon.png";
+import pathgenixLogo from "./assets/work_logo/pathgenixLogo.png";
+import vocayouLogo from "./assets/work_logo/vocayouLogo.png";
 
 export const SkillsInfo = [
   {
@@ -187,6 +189,33 @@ export const education = [
 export const projects = [
   {
     id: 0,
+    title: "Pathgenix - AI-Powered Career Guidance",
+    description:
+      "A full-stack AI-driven platform designed to guide students in the IT domain with Gemini-powered career support. Features include AI-generated practice questions, resume and cover letter builders, real-time industry data dashboards, and persistent user profiles. Built with the Next.js App Router, Prisma, Clerk, and Inngest, the app delivers a sleek and intelligent experience. Deployed on a fully serverless architecture with Vercel and Neon.",
+    image: pathgenixLogo,
+    tags: [
+      "Next.js",
+      "TailwindCSS",
+      "ShadCN UI",
+      "Prisma",
+      "Neon",
+      "Clerk",
+      "Inngest",
+      "Gemini AI",
+      "@react-pdf/renderer",
+      "Recharts",
+      "RESTful API",
+      "Serverless",
+      "Career Guidance",
+      "AI Integration",
+      "Vercel",
+    ],
+    github:
+      "https://github.com/user-attachments/assets/567cb2a3-ef65-40ca-b6b4-5918b196b0ce",
+    webapp: "https://pathgenix.vercel.app/",
+  },
+  {
+    id: 1,
     title: "Course Craft - An EdTech Platform",
     description:
       "An interactive and scalable e-learning platform built with React.js, Tailwind CSS, and Redux. Features include secure user authentication, course creation and enrollment, content rating, and payment integration via Razorpay. Backed by MongoDB and Cloudinary, and deployed using Vercel, Render, and MongoDB Atlas for a seamless, production-ready experience.",
@@ -212,7 +241,33 @@ export const projects = [
     webapp: "https://coursecraft-edtech.vercel.app/",
   },
   {
-    id: 1,
+    id: 2,
+    title: "VocaYou — Your Personal AI Assistant",
+    description:
+      "A full-stack virtual assistant built with the MERN stack and powered by Gemini AI. Offers intelligent, voice-enabled interactions using the Web Speech API and customizable assistant profiles. Secure user authentication with JWT, image uploads via Cloudinary, and REST APIs for managing assistant settings. Deployed on Render with MongoDB Atlas integration for data persistence.",
+    image: vocayouLogo,
+    tags: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "bcryptjs",
+      "Web Speech API",
+      "Gemini AI",
+      "Cloudinary",
+      "Multer",
+      "RESTful API",
+      "MERN Stack",
+      "Render",
+      "Full-Stack",
+    ],
+    github:
+      "https://github.com/user-attachments/assets/c88c19e2-6eec-475e-88ac-4fa470a6b912",
+    webapp: "https://vocayou.onrender.com/",
+  },
+  {
+    id: 3,
     title: "Hotel Reservation Website ",
     description:
       "A hotel booking web application with user registration, real-time room availability checks, booking management, and automated pricing. Features a secure admin panel for managing hotels, rooms, and user accounts, with all data stored in MongoDB.",
@@ -234,7 +289,7 @@ export const projects = [
     webapp: "https://github.com/Saurabh-Shivam/Hotel_Booking_Site",
   },
   {
-    id: 2,
+    id: 4,
     title: "iNotebook App",
     description:
       "A secure and intuitive React.js note-taking application that allows users to create, edit, and delete notes seamlessly. Features user authentication, responsive design, and efficient state management for an enhanced productivity experience.",
@@ -256,7 +311,7 @@ export const projects = [
     webapp: "https://github.com/Saurabh-Shivam/iNotebook-React",
   },
   {
-    id: 3,
+    id: 5,
     title: "mySangeet Android App",
     description:
       "A sleek and feature-rich Android music player app that scans and lists locally stored audio files automatically. Built with Java and Android SDK, it offers smooth playback controls for play, pause, and track navigation, delivering a seamless offline music experience.",
@@ -278,7 +333,7 @@ export const projects = [
     webapp: "https://github.com/Saurabh-Shivam/mySangeet-AndroidApp",
   },
   {
-    id: 4,
+    id: 6,
     title: "Coaching Website",
     description:
       "A responsive web application developed for SRIT Computer Classes Coaching Institute, enabling users to explore available courses and contact the institute seamlessly. The platform features user-friendly interface, enhancing the overall user experience",
@@ -295,7 +350,7 @@ export const projects = [
     webapp: "https://sritcomputerclasses.netlify.app/",
   },
   {
-    id: 5,
+    id: 7,
     title: "GitHub User Locator",
     description:
       "A user-friendly React.js application that allows users to search for GitHub profiles by username. It fetches detailed profile information, repositories, followers, and contributions via the GitHub API. The clean and responsive interface ensures a smooth experience for developers and recruiters alike.",
@@ -313,7 +368,7 @@ export const projects = [
     webapp: "https://github.com/Saurabh-Shivam/Github-User-Locator",
   },
   {
-    id: 6,
+    id: 8,
     title: "Pokémon Search App",
     description:
       "A lightweight and responsive web application that enables users to search for Pokémon by name or ID. Built with HTML, CSS, and JavaScript, it fetches data from the PokéAPI and displays detailed information, including images and stats, in a clean and interactive interface.",
@@ -332,7 +387,7 @@ export const projects = [
     webapp: "https://github.com/Saurabh-Shivam/Pokemon-Search-App",
   },
   {
-    id: 7,
+    id: 9,
     title: "NewsMonkey",
     description:
       "A modern React.js news aggregator app that fetches and displays the latest news articles from various sources using the NewsAPI. Features include category-based filtering, pagination, and a responsive UI for seamless browsing on all devices.",

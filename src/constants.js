@@ -44,6 +44,27 @@ import newsMon from "./assets/work_logo/newsMon.png";
 import pathgenixLogo from "./assets/work_logo/pathgenixLogo.png";
 import vocayouLogo from "./assets/work_logo/vocayouLogo.png";
 
+// Certificate Secrion Logo's
+import img921275 from "./assets/certificates/921275.png";
+import imgC from "./assets/certificates/c.png";
+import imgCSS from "./assets/certificates/css.png";
+import imgFCCFrontEnd from "./assets/certificates/FreeCodeCamp_FrontEndLibraries.png";
+import imgFCCJS from "./assets/certificates/FreeCodeCamp_JavaScriptAlgorithms.png";
+import imgFCCResponsive from "./assets/certificates/FreeCodeCamp_ResponsiveWebDesign.png";
+import imgFullstack from "./assets/certificates/fullstackdevelopment.png";
+import imgHTML from "./assets/certificates/html.png";
+import imgInternship from "./assets/certificates/Internship Letter.jpg";
+import imgJava from "./assets/certificates/java.png";
+import imgMaths from "./assets/certificates/maths.png";
+import imgMSExcel from "./assets/certificates/MS-Excel_Certificate.png";
+import imgNodeExpress from "./assets/certificates/nodejs+expressjs.png";
+import imgReactRedux from "./assets/certificates/react+redux.png";
+import imgTypeScript from "./assets/certificates/typescript.png";
+import imgWT from "./assets/certificates/wt.png";
+import imgIBMPy from "./assets/certificates/python-for-data-science-and-ai.png";
+import imgAccen from "./assets/certificates/Accenture Software Engineering Job Simulation.png";
+import imgDelottie from "./assets/certificates/Deloitte Technology Of Job Simulation.png";
+
 export const SkillsInfo = [
   {
     title: "Frontend",
@@ -152,9 +173,9 @@ export const education = [
     id: 0,
     img: mit,
     school: "Manipal Institute of Technology, Manipal",
-    date: "2024 - 2026",
+    date: "2024 - Present",
     grade: "8.18 CGPA",
-    desc: "I am currently pursuing my Master’s in Computer Applications (MCA) at MIT Manipal. During my time here, I've been sharpening my skills in full-stack development, diving deep into DSA, and exploring advanced technologies like TypeScript and Next.js. I've actively participated in workshops and hackathons, and collaborated on full-stack projects to enhance my practical development experience.",
+    desc: "I am currently pursuing my Master's in Computer Applications (MCA) at MIT Manipal. During my time here, I've been sharpening my skills in full-stack development, diving deep into DSA, and exploring advanced technologies like TypeScript and Next.js. I've actively participated in workshops and hackathons, and collaborated on full-stack projects to enhance my practical development experience.",
     degree: "Master of Computer Applications - MCA",
   },
   {
@@ -178,7 +199,7 @@ export const education = [
   {
     id: 3,
     img: sis,
-    school: "Satyam International High School, Patna, Bihar",
+    school: "Satyam International School, Patna, Bihar",
     date: "",
     grade: "9.7 CGPA",
     desc: "I completed my Class 10 (CBSE) from Satyam International High School with a strong academic foundation, particularly in Science and Computer Applications.",
@@ -406,4 +427,35 @@ export const projects = [
     github: "https://github.com/Saurabh-Shivam/NewsMonkey-React",
     webapp: "https://github.com/Saurabh-Shivam/NewsMonkey-React",
   },
+];
+
+export const certificates = [
+  { id: 0, name: "IBM Python For Data Science And AI", image: imgIBMPy },
+  {
+    id: 1,
+    name: "Accenture Software Engineering",
+    image: imgAccen,
+  },
+  { id: 2, name: "Deloitte Technology Of Job Simulation", image: imgDelottie },
+  { id: 3, name: "Full Stack Development", image: imgFullstack },
+
+  { id: 4, name: "FreeCodeCamp - Front End Libraries", image: imgFCCFrontEnd },
+  { id: 5, name: "FreeCodeCamp - JavaScript Algorithms", image: imgFCCJS },
+  {
+    id: 6,
+    name: "FreeCodeCamp - Responsive Web Design",
+    image: imgFCCResponsive,
+  },
+  { id: 9, name: "S.R.I.T - Internship Letter", image: imgInternship },
+  { id: 15, name: "Coursera - TypeScript", image: imgTypeScript },
+  { id: 16, name: "Coursera - Web Technology", image: imgWT },
+  { id: 17, name: "Qualcomm Turnip Innovation Festival", image: img921275 },
+  { id: 12, name: "Great Learning - MS Excel Certificate", image: imgMSExcel },
+  { id: 13, name: "DevTown - Node.js & Express.js", image: imgNodeExpress },
+  { id: 8, name: "SoloLearn - HTML", image: imgHTML },
+  { id: 10, name: "SoloLearn Java", image: imgJava },
+  { id: 14, name: "SoloLearn - React & Redux", image: imgReactRedux },
+  { id: 11, name: "Coursera- Maths", image: imgMaths },
+  { id: 18, name: "SoloLearn - C Programming", image: imgC },
+  { id: 19, name: "SoloLearn - CSS", image: imgCSS },
 ];

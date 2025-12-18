@@ -64,6 +64,9 @@ import imgWT from "./assets/certificates/wt.png";
 import imgIBMPy from "./assets/certificates/python-for-data-science-and-ai.png";
 import imgAccen from "./assets/certificates/Accenture Software Engineering Job Simulation.png";
 import imgDelottie from "./assets/certificates/Deloitte Technology Of Job Simulation.png";
+import imgGenAI from "./assets/certificates/genAI.png";
+import imgMulticloud from "./assets/certificates/multicloud.png";
+import imgFoundations from "./assets/certificates/foundations.png";
 
 export const SkillsInfo = [
   {
@@ -430,32 +433,38 @@ export const projects = [
 ];
 
 export const certificates = [
-  { id: 0, name: "IBM Python For Data Science And AI", image: imgIBMPy },
+  { id: 0, name: "Oracle Generative AI Professional", image: imgGenAI },
   {
     id: 1,
-    name: "Accenture Software Engineering",
-    image: imgAccen,
+    name: "Oracle Multicloud Architect Professional",
+    image: imgMulticloud,
   },
-  { id: 2, name: "Deloitte Technology Of Job Simulation", image: imgDelottie },
-  { id: 3, name: "Full Stack Development", image: imgFullstack },
-
-  { id: 4, name: "FreeCodeCamp - Front End Libraries", image: imgFCCFrontEnd },
-  { id: 5, name: "FreeCodeCamp - JavaScript Algorithms", image: imgFCCJS },
   {
-    id: 6,
+    id: 2,
+    name: "Oracle Cloud Foundations",
+    image: imgFoundations,
+  },
+  { id: 3, name: "IBM Python For Data Science And AI", image: imgIBMPy },
+  { id: 4, name: "Accenture Software Engineering", image: imgAccen },
+  { id: 5, name: "Deloitte Technology Of Job Simulation", image: imgDelottie },
+  { id: 6, name: "Full Stack Development", image: imgFullstack },
+  { id: 7, name: "FreeCodeCamp - Front End Libraries", image: imgFCCFrontEnd },
+  { id: 8, name: "FreeCodeCamp - JavaScript Algorithms", image: imgFCCJS },
+  {
+    id: 9,
     name: "FreeCodeCamp - Responsive Web Design",
     image: imgFCCResponsive,
   },
-  { id: 9, name: "S.R.I.T - Internship Letter", image: imgInternship },
-  { id: 15, name: "Coursera - TypeScript", image: imgTypeScript },
-  { id: 16, name: "Coursera - Web Technology", image: imgWT },
-  { id: 17, name: "Qualcomm Turnip Innovation Festival", image: img921275 },
-  { id: 12, name: "Great Learning - MS Excel Certificate", image: imgMSExcel },
-  { id: 13, name: "DevTown - Node.js & Express.js", image: imgNodeExpress },
-  { id: 8, name: "SoloLearn - HTML", image: imgHTML },
-  { id: 10, name: "SoloLearn Java", image: imgJava },
-  { id: 14, name: "SoloLearn - React & Redux", image: imgReactRedux },
-  { id: 11, name: "Coursera- Maths", image: imgMaths },
-  { id: 18, name: "SoloLearn - C Programming", image: imgC },
-  { id: 19, name: "SoloLearn - CSS", image: imgCSS },
+  { id: 10, name: "S.R.I.T - Internship Letter", image: imgInternship },
+  { id: 11, name: "Coursera - TypeScript", image: imgTypeScript },
+  { id: 12, name: "Coursera - Web Technology", image: imgWT },
+  { id: 13, name: "Qualcomm Turnip Innovation Festival", image: img921275 },
+  { id: 14, name: "Great Learning - MS Excel Certificate", image: imgMSExcel },
+  { id: 15, name: "DevTown - Node.js & Express.js", image: imgNodeExpress },
+  { id: 16, name: "SoloLearn - HTML", image: imgHTML },
+  { id: 17, name: "SoloLearn - Java", image: imgJava },
+  { id: 18, name: "SoloLearn - React & Redux", image: imgReactRedux },
+  { id: 19, name: "Coursera - Maths", image: imgMaths },
+  { id: 20, name: "SoloLearn - C Programming", image: imgC },
+  { id: 21, name: "SoloLearn - CSS", image: imgCSS },
 ];

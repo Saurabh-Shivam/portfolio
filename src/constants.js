@@ -130,7 +130,7 @@ export const experiences = [
   {
     id: 0,
     img: sritLogo,
-    role: "Web Developer",
+    role: "Web Developer Intern",
     company: "SRIT Computer Institute",
     date: "June 2023 - February 2024",
     desc: "Developed a responsive full-stack web application using the MERN stack, focusing on clean UI with React.js and efficient backend logic with Node.js and MongoDB. Improved system performance, automated record-keeping processes, and optimized server response times by replacing manual workflows with scalable digital solutions.",

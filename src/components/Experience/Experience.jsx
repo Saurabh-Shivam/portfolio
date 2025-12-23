@@ -21,7 +21,7 @@ const Experience = () => {
       {/* Experience Timeline */}
       <div className="relative">
         {/* Vertical line */}
-        {/* <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 sm:-translate-x-0 w-1 bg-gray-300 dark:bg-white h-full"></div> */}
+        <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 sm:-translate-x-0 w-1 bg-gray-300 dark:bg-white h-full"></div>
 
         {/* Experience Entries */}
         {experiences.map((experience, index) => (
@@ -49,7 +49,7 @@ const Experience = () => {
               {/* Flex container for image and text */}
               <div className="flex items-center space-x-6">
                 {/* Company Logo/Image */}
-                <div className="w-16 h-16 bg-gray-100 dark:bg-white rounded-md overflow-hidden">
+                <div className="w-20 h-14 bg-gray-100 dark:bg-white rounded-md overflow-hidden">
                   <img
                     src={experience.img}
                     alt={experience.company}

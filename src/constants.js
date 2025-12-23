@@ -25,6 +25,7 @@ import vercelLogo from "./assets/tech_logo/vercel.png";
 
 // Experience Section Logo's
 import sritLogo from "./assets/company_logo/srit_logo.png";
+import tutLogo from "./assets/company_logo/tut_logo.jpeg";
 
 // Education Section Logo's
 import mit from "./assets/education_logo/mit.jpeg";
@@ -143,23 +144,23 @@ export const experiences = [
       "Redux",
     ],
   },
-  // {
-  //   id: 1,
-  //   img: agcLogo,
-  //   role: "Fullstack Engineer",
-  //   company: "Agumentik Group of Companies",
-  //   date: "July 2023 - March 2024",
-  //   desc: "Contributed to innovative projects as a Fullstack Engineer, leading both frontend and backend development using technologies such as HTML, CSS, JavaScript, PHP, SQL, Bootstrap, and ReactJS. Worked closely with the team to deliver responsive, high-performance web applications and improve user experience through seamless integration of various technologies.",
-  //   skills: [
-  //     "ReactJS",
-  //     "Redux",
-  //     "JavaScript",
-  //     "Tailwind CSS",
-  //     "HTML",
-  //     "CSS",
-  //     "SQL",
-  //   ],
-  // },
+  {
+    id: 1,
+    img: tutLogo,
+    role: "Software Developer (Cybersecurity) Intern",
+    company: "Tutelar Tech Labs Pvt. Ltd",
+    date: "Dec 2025 - Present",
+    desc: "Contributing to cybersecurity-focused web applications and internal dashboards by assisting with React.js components, backend logic, and data handling. Gaining hands-on exposure to network security fundamentals, Palo Alto firewall concepts, log analysis, and Python scripting while working with senior engineers on secure production systems.",
+    skills: [
+      "React JS",
+      "Web Development",
+      "Computer Networking",
+      "Cybersecurity",
+      "Palo Alto Networks",
+      "Python",
+      "Large Language Models (LLM)",
+    ],
+  },
   // {
   //   id: 2,
   //   img: newtonschoolLogo,
